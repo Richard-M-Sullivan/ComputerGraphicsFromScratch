@@ -10,7 +10,7 @@ would be well prepared to cut my teeth into this book because computer graphics
 uses a fair amount of linear algebra.
 
 # How Pixels Are Placed On The Screen
-I downloaded and installed raylib onto my machine, and will be using raylib to
+I downloaded and installed SDL2 onto my machine, and will be using SDL2 to
 handle all things graphics.
 
 

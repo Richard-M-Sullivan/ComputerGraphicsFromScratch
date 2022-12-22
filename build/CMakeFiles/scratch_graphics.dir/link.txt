@@ -1,0 +1,1 @@
+/usr/bin/g++ -g CMakeFiles/scratch_graphics.dir/main.cpp.o -o scratch_graphics  -lSDL2 

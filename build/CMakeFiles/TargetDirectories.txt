@@ -1,0 +1,3 @@
+/home/richard/Programming/ComputerGraphicsFromScratch/build/CMakeFiles/scratch_graphics.dir
+/home/richard/Programming/ComputerGraphicsFromScratch/build/CMakeFiles/edit_cache.dir
+/home/richard/Programming/ComputerGraphicsFromScratch/build/CMakeFiles/rebuild_cache.dir
