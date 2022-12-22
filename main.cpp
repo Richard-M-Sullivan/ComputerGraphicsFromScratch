@@ -53,5 +53,11 @@ int main(int argc, char* argv[]){
         }
     }
 
+    //destroy the window
+    SDL_DestroyWindow( _window );
+
+    //quit SDL2
+    SDL_Quit();
+
     return 0;
 }
