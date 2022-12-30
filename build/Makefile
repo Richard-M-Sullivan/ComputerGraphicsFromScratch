@@ -129,6 +129,30 @@ scratch_graphics/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/scratch_graphics.dir/build.make CMakeFiles/scratch_graphics.dir/build
 .PHONY : scratch_graphics/fast
 
+canvas.o: canvas.cpp.o
+.PHONY : canvas.o
+
+# target to build an object file
+canvas.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/scratch_graphics.dir/build.make CMakeFiles/scratch_graphics.dir/canvas.cpp.o
+.PHONY : canvas.cpp.o
+
+canvas.i: canvas.cpp.i
+.PHONY : canvas.i
+
+# target to preprocess a source file
+canvas.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/scratch_graphics.dir/build.make CMakeFiles/scratch_graphics.dir/canvas.cpp.i
+.PHONY : canvas.cpp.i
+
+canvas.s: canvas.cpp.s
+.PHONY : canvas.s
+
+# target to generate assembly for a file
+canvas.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/scratch_graphics.dir/build.make CMakeFiles/scratch_graphics.dir/canvas.cpp.s
+.PHONY : canvas.cpp.s
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -162,6 +186,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... scratch_graphics"
+	@echo "... canvas.o"
+	@echo "... canvas.i"
+	@echo "... canvas.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

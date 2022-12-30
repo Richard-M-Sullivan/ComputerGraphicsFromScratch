@@ -5,6 +5,7 @@ project(scratch_graphics)
 add_executable(
     ${PROJECT_NAME}
     main.cpp
+    canvas.cpp
 )
 
 target_link_libraries(

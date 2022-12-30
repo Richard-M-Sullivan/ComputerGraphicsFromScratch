@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/richard/Programming/ComputerGraphicsFromScratch/canvas.cpp" "CMakeFiles/scratch_graphics.dir/canvas.cpp.o" "gcc" "CMakeFiles/scratch_graphics.dir/canvas.cpp.o.d"
   "/home/richard/Programming/ComputerGraphicsFromScratch/main.cpp" "CMakeFiles/scratch_graphics.dir/main.cpp.o" "gcc" "CMakeFiles/scratch_graphics.dir/main.cpp.o.d"
   )
 

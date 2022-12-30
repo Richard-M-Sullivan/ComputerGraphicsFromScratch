@@ -3,5 +3,10 @@
   "directory": "/home/richard/Programming/ComputerGraphicsFromScratch/build",
   "command": "/usr/bin/g++   -g -o CMakeFiles/scratch_graphics.dir/main.cpp.o -c /home/richard/Programming/ComputerGraphicsFromScratch/main.cpp",
   "file": "/home/richard/Programming/ComputerGraphicsFromScratch/main.cpp"
+},
+{
+  "directory": "/home/richard/Programming/ComputerGraphicsFromScratch/build",
+  "command": "/usr/bin/g++   -g -o CMakeFiles/scratch_graphics.dir/canvas.cpp.o -c /home/richard/Programming/ComputerGraphicsFromScratch/canvas.cpp",
+  "file": "/home/richard/Programming/ComputerGraphicsFromScratch/canvas.cpp"
 }
 ]
