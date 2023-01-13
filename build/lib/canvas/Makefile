@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/richard/Programming/ComputerGraphicsFromScratch/build/CMakeFiles /home/richard/Programming/ComputerGraphicsFromScratch/build//CMakeFiles/progress.marks
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
+	cd /home/richard/Programming/ComputerGraphicsFromScratch/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/richard/Programming/ComputerGraphicsFromScratch/build/CMakeFiles /home/richard/Programming/ComputerGraphicsFromScratch/build/lib/canvas//CMakeFiles/progress.marks
+	cd /home/richard/Programming/ComputerGraphicsFromScratch/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/canvas/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/richard/Programming/ComputerGraphicsFromScratch/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 clean
+	cd /home/richard/Programming/ComputerGraphicsFromScratch/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/canvas/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,68 +103,56 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
+	cd /home/richard/Programming/ComputerGraphicsFromScratch/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/canvas/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
+	cd /home/richard/Programming/ComputerGraphicsFromScratch/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/canvas/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/richard/Programming/ComputerGraphicsFromScratch/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-#=============================================================================
-# Target rules for targets named scratch_graphics
+# Convenience name for target.
+lib/canvas/CMakeFiles/canvas.dir/rule:
+	cd /home/richard/Programming/ComputerGraphicsFromScratch/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/canvas/CMakeFiles/canvas.dir/rule
+.PHONY : lib/canvas/CMakeFiles/canvas.dir/rule
 
-# Build rule for target.
-scratch_graphics: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 scratch_graphics
-.PHONY : scratch_graphics
-
-# fast build rule for target.
-scratch_graphics/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/scratch_graphics.dir/build.make CMakeFiles/scratch_graphics.dir/build
-.PHONY : scratch_graphics/fast
-
-#=============================================================================
-# Target rules for targets named canvas
-
-# Build rule for target.
-canvas: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 canvas
+# Convenience name for target.
+canvas: lib/canvas/CMakeFiles/canvas.dir/rule
 .PHONY : canvas
 
 # fast build rule for target.
 canvas/fast:
-	$(MAKE) $(MAKESILENT) -f lib/canvas/CMakeFiles/canvas.dir/build.make lib/canvas/CMakeFiles/canvas.dir/build
+	cd /home/richard/Programming/ComputerGraphicsFromScratch/build && $(MAKE) $(MAKESILENT) -f lib/canvas/CMakeFiles/canvas.dir/build.make lib/canvas/CMakeFiles/canvas.dir/build
 .PHONY : canvas/fast
 
-src/main.o: src/main.cpp.o
-.PHONY : src/main.o
+canvas.o: canvas.cpp.o
+.PHONY : canvas.o
 
 # target to build an object file
-src/main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/scratch_graphics.dir/build.make CMakeFiles/scratch_graphics.dir/src/main.cpp.o
-.PHONY : src/main.cpp.o
+canvas.cpp.o:
+	cd /home/richard/Programming/ComputerGraphicsFromScratch/build && $(MAKE) $(MAKESILENT) -f lib/canvas/CMakeFiles/canvas.dir/build.make lib/canvas/CMakeFiles/canvas.dir/canvas.cpp.o
+.PHONY : canvas.cpp.o
 
-src/main.i: src/main.cpp.i
-.PHONY : src/main.i
+canvas.i: canvas.cpp.i
+.PHONY : canvas.i
 
 # target to preprocess a source file
-src/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/scratch_graphics.dir/build.make CMakeFiles/scratch_graphics.dir/src/main.cpp.i
-.PHONY : src/main.cpp.i
+canvas.cpp.i:
+	cd /home/richard/Programming/ComputerGraphicsFromScratch/build && $(MAKE) $(MAKESILENT) -f lib/canvas/CMakeFiles/canvas.dir/build.make lib/canvas/CMakeFiles/canvas.dir/canvas.cpp.i
+.PHONY : canvas.cpp.i
 
-src/main.s: src/main.cpp.s
-.PHONY : src/main.s
+canvas.s: canvas.cpp.s
+.PHONY : canvas.s
 
 # target to generate assembly for a file
-src/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/scratch_graphics.dir/build.make CMakeFiles/scratch_graphics.dir/src/main.cpp.s
-.PHONY : src/main.cpp.s
+canvas.cpp.s:
+	cd /home/richard/Programming/ComputerGraphicsFromScratch/build && $(MAKE) $(MAKESILENT) -f lib/canvas/CMakeFiles/canvas.dir/build.make lib/canvas/CMakeFiles/canvas.dir/canvas.cpp.s
+.PHONY : canvas.cpp.s
 
 # Help Target
 help:
@@ -175,10 +163,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... canvas"
-	@echo "... scratch_graphics"
-	@echo "... src/main.o"
-	@echo "... src/main.i"
-	@echo "... src/main.s"
+	@echo "... canvas.o"
+	@echo "... canvas.i"
+	@echo "... canvas.s"
 .PHONY : help
 
 
@@ -190,6 +177,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/richard/Programming/ComputerGraphicsFromScratch/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

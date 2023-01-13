@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/g++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/richard/Programming/ComputerGraphicsFromScratch/scratch_graphics -I/home/richard/Programming/ComputerGraphicsFromScratch/lib/canvas
+CXX_INCLUDES = 
 
 CXX_FLAGS = -g
 

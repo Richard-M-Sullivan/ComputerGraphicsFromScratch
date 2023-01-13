@@ -1,8 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/scratch_graphics.dir/canvas.cpp.o"
-  "CMakeFiles/scratch_graphics.dir/canvas.cpp.o.d"
-  "CMakeFiles/scratch_graphics.dir/main.cpp.o"
-  "CMakeFiles/scratch_graphics.dir/main.cpp.o.d"
+  "CMakeFiles/scratch_graphics.dir/src/main.cpp.o"
+  "CMakeFiles/scratch_graphics.dir/src/main.cpp.o.d"
   "scratch_graphics"
   "scratch_graphics.pdb"
 )

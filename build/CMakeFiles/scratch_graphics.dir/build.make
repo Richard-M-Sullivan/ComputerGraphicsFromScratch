@@ -69,47 +69,32 @@ include CMakeFiles/scratch_graphics.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/scratch_graphics.dir/flags.make
 
-CMakeFiles/scratch_graphics.dir/main.cpp.o: CMakeFiles/scratch_graphics.dir/flags.make
-CMakeFiles/scratch_graphics.dir/main.cpp.o: ../main.cpp
-CMakeFiles/scratch_graphics.dir/main.cpp.o: CMakeFiles/scratch_graphics.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/richard/Programming/ComputerGraphicsFromScratch/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/scratch_graphics.dir/main.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/scratch_graphics.dir/main.cpp.o -MF CMakeFiles/scratch_graphics.dir/main.cpp.o.d -o CMakeFiles/scratch_graphics.dir/main.cpp.o -c /home/richard/Programming/ComputerGraphicsFromScratch/main.cpp
+CMakeFiles/scratch_graphics.dir/src/main.cpp.o: CMakeFiles/scratch_graphics.dir/flags.make
+CMakeFiles/scratch_graphics.dir/src/main.cpp.o: ../src/main.cpp
+CMakeFiles/scratch_graphics.dir/src/main.cpp.o: CMakeFiles/scratch_graphics.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/richard/Programming/ComputerGraphicsFromScratch/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/scratch_graphics.dir/src/main.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/scratch_graphics.dir/src/main.cpp.o -MF CMakeFiles/scratch_graphics.dir/src/main.cpp.o.d -o CMakeFiles/scratch_graphics.dir/src/main.cpp.o -c /home/richard/Programming/ComputerGraphicsFromScratch/src/main.cpp
 
-CMakeFiles/scratch_graphics.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/scratch_graphics.dir/main.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/richard/Programming/ComputerGraphicsFromScratch/main.cpp > CMakeFiles/scratch_graphics.dir/main.cpp.i
+CMakeFiles/scratch_graphics.dir/src/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/scratch_graphics.dir/src/main.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/richard/Programming/ComputerGraphicsFromScratch/src/main.cpp > CMakeFiles/scratch_graphics.dir/src/main.cpp.i
 
-CMakeFiles/scratch_graphics.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/scratch_graphics.dir/main.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/richard/Programming/ComputerGraphicsFromScratch/main.cpp -o CMakeFiles/scratch_graphics.dir/main.cpp.s
-
-CMakeFiles/scratch_graphics.dir/canvas.cpp.o: CMakeFiles/scratch_graphics.dir/flags.make
-CMakeFiles/scratch_graphics.dir/canvas.cpp.o: ../canvas.cpp
-CMakeFiles/scratch_graphics.dir/canvas.cpp.o: CMakeFiles/scratch_graphics.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/richard/Programming/ComputerGraphicsFromScratch/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/scratch_graphics.dir/canvas.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/scratch_graphics.dir/canvas.cpp.o -MF CMakeFiles/scratch_graphics.dir/canvas.cpp.o.d -o CMakeFiles/scratch_graphics.dir/canvas.cpp.o -c /home/richard/Programming/ComputerGraphicsFromScratch/canvas.cpp
-
-CMakeFiles/scratch_graphics.dir/canvas.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/scratch_graphics.dir/canvas.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/richard/Programming/ComputerGraphicsFromScratch/canvas.cpp > CMakeFiles/scratch_graphics.dir/canvas.cpp.i
-
-CMakeFiles/scratch_graphics.dir/canvas.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/scratch_graphics.dir/canvas.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/richard/Programming/ComputerGraphicsFromScratch/canvas.cpp -o CMakeFiles/scratch_graphics.dir/canvas.cpp.s
+CMakeFiles/scratch_graphics.dir/src/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/scratch_graphics.dir/src/main.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/richard/Programming/ComputerGraphicsFromScratch/src/main.cpp -o CMakeFiles/scratch_graphics.dir/src/main.cpp.s
 
 # Object files for target scratch_graphics
 scratch_graphics_OBJECTS = \
-"CMakeFiles/scratch_graphics.dir/main.cpp.o" \
-"CMakeFiles/scratch_graphics.dir/canvas.cpp.o"
+"CMakeFiles/scratch_graphics.dir/src/main.cpp.o"
 
 # External object files for target scratch_graphics
 scratch_graphics_EXTERNAL_OBJECTS =
 
-scratch_graphics: CMakeFiles/scratch_graphics.dir/main.cpp.o
-scratch_graphics: CMakeFiles/scratch_graphics.dir/canvas.cpp.o
+scratch_graphics: CMakeFiles/scratch_graphics.dir/src/main.cpp.o
 scratch_graphics: CMakeFiles/scratch_graphics.dir/build.make
+scratch_graphics: lib/canvas/libcanvas.a
 scratch_graphics: CMakeFiles/scratch_graphics.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/richard/Programming/ComputerGraphicsFromScratch/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable scratch_graphics"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/richard/Programming/ComputerGraphicsFromScratch/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable scratch_graphics"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/scratch_graphics.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

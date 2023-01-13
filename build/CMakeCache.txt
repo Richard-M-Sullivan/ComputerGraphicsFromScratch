@@ -209,6 +209,15 @@ CMAKE_STRIP:FILEPATH=/usr/bin/strip
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
 //Value Computed by CMake
+canvas_BINARY_DIR:STATIC=/home/richard/Programming/ComputerGraphicsFromScratch/build/lib/canvas
+
+//Value Computed by CMake
+canvas_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+canvas_SOURCE_DIR:STATIC=/home/richard/Programming/ComputerGraphicsFromScratch/lib/canvas
+
+//Value Computed by CMake
 scratch_graphics_BINARY_DIR:STATIC=/home/richard/Programming/ComputerGraphicsFromScratch/build
 
 //Value Computed by CMake
@@ -320,7 +329,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=1
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=2
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

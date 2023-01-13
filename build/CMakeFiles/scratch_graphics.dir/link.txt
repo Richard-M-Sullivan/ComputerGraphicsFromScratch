@@ -1,1 +1,1 @@
-/usr/bin/g++ -g CMakeFiles/scratch_graphics.dir/main.cpp.o CMakeFiles/scratch_graphics.dir/canvas.cpp.o -o scratch_graphics  -lSDL2 
+/usr/bin/g++ -g CMakeFiles/scratch_graphics.dir/src/main.cpp.o -o scratch_graphics  -lSDL2 lib/canvas/libcanvas.a -lSDL2 

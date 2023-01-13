@@ -1,6 +1,6 @@
 #include "SDL2/SDL.h"
 #include <stdio.h>
-#include "./canvas.h"
+#include "canvas.h"
 
 int process_events();
 void delay(int frame_rate, int start_time_ms, int end_time_ms);

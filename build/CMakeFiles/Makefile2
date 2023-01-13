@@ -64,29 +64,46 @@ CMAKE_BINARY_DIR = /home/richard/Programming/ComputerGraphicsFromScratch/build
 
 # The main recursive "all" target.
 all: CMakeFiles/scratch_graphics.dir/all
+all: lib/canvas/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
-preinstall:
+preinstall: lib/canvas/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
 clean: CMakeFiles/scratch_graphics.dir/clean
+clean: lib/canvas/clean
 .PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory lib/canvas
+
+# Recursive "all" directory target.
+lib/canvas/all: lib/canvas/CMakeFiles/canvas.dir/all
+.PHONY : lib/canvas/all
+
+# Recursive "preinstall" directory target.
+lib/canvas/preinstall:
+.PHONY : lib/canvas/preinstall
+
+# Recursive "clean" directory target.
+lib/canvas/clean: lib/canvas/CMakeFiles/canvas.dir/clean
+.PHONY : lib/canvas/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/scratch_graphics.dir
 
 # All Build rule for target.
-CMakeFiles/scratch_graphics.dir/all:
+CMakeFiles/scratch_graphics.dir/all: lib/canvas/CMakeFiles/canvas.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/scratch_graphics.dir/build.make CMakeFiles/scratch_graphics.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/scratch_graphics.dir/build.make CMakeFiles/scratch_graphics.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/richard/Programming/ComputerGraphicsFromScratch/build/CMakeFiles --progress-num=1,2,3 "Built target scratch_graphics"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/richard/Programming/ComputerGraphicsFromScratch/build/CMakeFiles --progress-num=3,4 "Built target scratch_graphics"
 .PHONY : CMakeFiles/scratch_graphics.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/scratch_graphics.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/richard/Programming/ComputerGraphicsFromScratch/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/richard/Programming/ComputerGraphicsFromScratch/build/CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/scratch_graphics.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/richard/Programming/ComputerGraphicsFromScratch/build/CMakeFiles 0
 .PHONY : CMakeFiles/scratch_graphics.dir/rule
@@ -99,6 +116,32 @@ scratch_graphics: CMakeFiles/scratch_graphics.dir/rule
 CMakeFiles/scratch_graphics.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/scratch_graphics.dir/build.make CMakeFiles/scratch_graphics.dir/clean
 .PHONY : CMakeFiles/scratch_graphics.dir/clean
+
+#=============================================================================
+# Target rules for target lib/canvas/CMakeFiles/canvas.dir
+
+# All Build rule for target.
+lib/canvas/CMakeFiles/canvas.dir/all:
+	$(MAKE) $(MAKESILENT) -f lib/canvas/CMakeFiles/canvas.dir/build.make lib/canvas/CMakeFiles/canvas.dir/depend
+	$(MAKE) $(MAKESILENT) -f lib/canvas/CMakeFiles/canvas.dir/build.make lib/canvas/CMakeFiles/canvas.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/richard/Programming/ComputerGraphicsFromScratch/build/CMakeFiles --progress-num=1,2 "Built target canvas"
+.PHONY : lib/canvas/CMakeFiles/canvas.dir/all
+
+# Build rule for subdir invocation for target.
+lib/canvas/CMakeFiles/canvas.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/richard/Programming/ComputerGraphicsFromScratch/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/canvas/CMakeFiles/canvas.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/richard/Programming/ComputerGraphicsFromScratch/build/CMakeFiles 0
+.PHONY : lib/canvas/CMakeFiles/canvas.dir/rule
+
+# Convenience name for target.
+canvas: lib/canvas/CMakeFiles/canvas.dir/rule
+.PHONY : canvas
+
+# clean rule for target.
+lib/canvas/CMakeFiles/canvas.dir/clean:
+	$(MAKE) $(MAKESILENT) -f lib/canvas/CMakeFiles/canvas.dir/build.make lib/canvas/CMakeFiles/canvas.dir/clean
+.PHONY : lib/canvas/CMakeFiles/canvas.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

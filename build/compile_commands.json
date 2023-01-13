@@ -1,12 +1,12 @@
 [
 {
   "directory": "/home/richard/Programming/ComputerGraphicsFromScratch/build",
-  "command": "/usr/bin/g++   -g -o CMakeFiles/scratch_graphics.dir/main.cpp.o -c /home/richard/Programming/ComputerGraphicsFromScratch/main.cpp",
-  "file": "/home/richard/Programming/ComputerGraphicsFromScratch/main.cpp"
+  "command": "/usr/bin/g++  -I/home/richard/Programming/ComputerGraphicsFromScratch/scratch_graphics -I/home/richard/Programming/ComputerGraphicsFromScratch/lib/canvas -g -o CMakeFiles/scratch_graphics.dir/src/main.cpp.o -c /home/richard/Programming/ComputerGraphicsFromScratch/src/main.cpp",
+  "file": "/home/richard/Programming/ComputerGraphicsFromScratch/src/main.cpp"
 },
 {
-  "directory": "/home/richard/Programming/ComputerGraphicsFromScratch/build",
-  "command": "/usr/bin/g++   -g -o CMakeFiles/scratch_graphics.dir/canvas.cpp.o -c /home/richard/Programming/ComputerGraphicsFromScratch/canvas.cpp",
-  "file": "/home/richard/Programming/ComputerGraphicsFromScratch/canvas.cpp"
+  "directory": "/home/richard/Programming/ComputerGraphicsFromScratch/build/lib/canvas",
+  "command": "/usr/bin/g++   -g -o CMakeFiles/canvas.dir/canvas.cpp.o -c /home/richard/Programming/ComputerGraphicsFromScratch/lib/canvas/canvas.cpp",
+  "file": "/home/richard/Programming/ComputerGraphicsFromScratch/lib/canvas/canvas.cpp"
 }
 ]

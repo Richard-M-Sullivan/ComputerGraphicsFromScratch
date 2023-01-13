@@ -1,3 +1,6 @@
 /home/richard/Programming/ComputerGraphicsFromScratch/build/CMakeFiles/scratch_graphics.dir
 /home/richard/Programming/ComputerGraphicsFromScratch/build/CMakeFiles/edit_cache.dir
 /home/richard/Programming/ComputerGraphicsFromScratch/build/CMakeFiles/rebuild_cache.dir
+/home/richard/Programming/ComputerGraphicsFromScratch/build/lib/canvas/CMakeFiles/canvas.dir
+/home/richard/Programming/ComputerGraphicsFromScratch/build/lib/canvas/CMakeFiles/edit_cache.dir
+/home/richard/Programming/ComputerGraphicsFromScratch/build/lib/canvas/CMakeFiles/rebuild_cache.dir

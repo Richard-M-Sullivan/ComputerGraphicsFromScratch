@@ -8,12 +8,11 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/richard/Programming/ComputerGraphicsFromScratch/src/main.cpp" "CMakeFiles/scratch_graphics.dir/src/main.cpp.o" "gcc" "CMakeFiles/scratch_graphics.dir/src/main.cpp.o.d"
+  "/home/richard/Programming/ComputerGraphicsFromScratch/lib/canvas/canvas.cpp" "lib/canvas/CMakeFiles/canvas.dir/canvas.cpp.o" "gcc" "lib/canvas/CMakeFiles/canvas.dir/canvas.cpp.o.d"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/richard/Programming/ComputerGraphicsFromScratch/build/lib/canvas/CMakeFiles/canvas.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.
